@@ -1,23 +1,24 @@
 # UI Exercise
 The goal of this exercise is to see if you are able to run a demo from a readme file and work on it without any trouble.
 
-## Steps
+## 2 Steps
 * install the tools, dependencies
 * run the project
+
 Then do the exercise we sent you and sent your results back to us.
 
-## 1 - Getting Started
+## 1 - Install Tools & Dependencies
 [Homebrew](http://brew.sh/)
 [Bower](http://bower.io/) requires node, npm and git.
 [Grunt](http://gruntjs.com/)
 
-#### Install Bower & Dependencies
+#### Bower & Dependencies
 
 ```sh
 npm install -g bower && bower install
 ```
 
-### Run the demo
+## 2 - Run the project
 
 ```sh
 grunt serve
