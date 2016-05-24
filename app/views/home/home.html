@@ -1,0 +1,75 @@
+<ul class="side-nav side-main fixed" id="nav-mobile">
+  <li class="bold">
+    <a class="waves-effect waves-blue tooltipped logo-home" data-position="right" data-tooltip="Home" ui-sref="home.dashboard"></a>
+  </li>
+  <li class="bold"><a class="waves-effect waves-blue tooltipped" data-position="right" data-tooltip="Dashboard" ui-sref="home.dashboard" ui-sref-active="active">
+    <i class="mdi-action-dashboard" title="Dashboard"></i></a>
+  </li>
+  <li class="bold"><a class="waves-effect waves-blue tooltipped" data-position="right" data-tooltip="Tasks" ui-sref="home.tasks" ui-sref-active="active">
+    <i class="mdi-toggle-check-box" title="Tasks"></i>
+    <span class="badge rounded task">3</span></a>
+  </li>
+  <li class="bold"><a class="waves-effect waves-blue tooltipped" data-position="right" data-tooltip="Personal Workspace" ui-sref="home.personalworkspace" ui-sref-active="active">
+    <i class="mdi-file-folder-shared" title="Personal Workspace"></i></a>
+  </li>
+  <li class="bold"><a class="waves-effect waves-blue tooltipped" data-position="right" data-tooltip="Activity" ui-sref="home.activity" ui-sref-active="active">
+    <i class="mdi-action-restore" title="Activity"></i></a>
+  </li>
+  <li class="bold"><a class="waves-effect waves-blue tooltipped" data-position="right" data-tooltip="Favorites" ui-sref="home.favorites" ui-sref-active="active">
+    <i class="mdi-action-grade" title="Favorites"></i></a>
+  </li>
+  <li class="bold"><a class="waves-effect waves-blue tooltipped" data-position="right" data-tooltip="Collections" ui-sref="home.collections" ui-sref-active="active">
+    <i class="mdi-action-book" title="Collections"></i></a>
+  </li>
+  <li class="bold"><a class="waves-effect waves-blue tooltipped" data-position="right" data-tooltip="Searches" ui-sref="home.searches" ui-sref-active="active">
+    <i class="mdi-action-search" title="Recherches"></i></a>
+  </li>
+  <li class="bold tree"><a class="waves-effect waves-blue tree-show tooltipped" data-position="right" data-tooltip="View Tree" href="#" ui-sref-active="active">
+    <i class="mdi-file-folder-open" title="View Tree"></i></a>
+  </li>
+</ul>
+
+<div class="tree-sidebar">
+  <div class="tree title">Tree</div>
+  <form class="col s12 select">
+    <div class="row default-repository">
+      <select class="browser-default">
+        <option value="0" selected>Default Domain</option>
+        <option value="1">Other domain</option>
+        <option value="1">----------------</option>
+        <option value="0" selected>Default Repository</option>
+        <option value="1">Other repository</option>
+      </select>
+    </div>
+  </form>
+  <ul>
+    <li><a href=""><i class="mdi-hardware-keyboard-arrow-right"></i>
+      <i class="mdi-communication-email"></i>Cases</a></li>
+    <li><a href=""><i class="mdi-hardware-keyboard-arrow-right"></i>
+    <i class="mdi-action-receipt"></i>Invoices</a></li>
+    <li>
+      <a href="">
+        <i class="mdi-hardware-keyboard-arrow-down"></i>
+        <i class="mdi-file-folder"></i>Workspaces
+      </a>
+      <ul>
+        <li><a href=""><i class="mdi-file-folder"></i>Workspace 1</a></li>
+        <li><a href=""><i class="mdi-file-folder"></i>Workspace 2</a></li>
+        <li><a href=""><i class="mdi-file-folder"></i>Workspace 3</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<ng-include src="'views/top-nav.html'"></ng-include>
+
+<div ui-view></div>
+
+<script>
+  $(document).ready(function() {
+    $('.tooltipped').tooltip({delay: 5});
+    $('.tree-show').click(function(){
+      document.body.classList.toggle('showing-tree-sidebar');
+    })
+  });
+</script>

@@ -1,0 +1,33 @@
+<section class="top-nav">
+  <div class="container">
+    <div class="nav-wrapper">
+      <a class="page-title">Settings / Cloud Services</a>
+    </div>
+  </div>
+</section>
+
+<div class="container nxMainContainer">
+  <div class="row">
+    <div class="col s12 m12 l12">
+        <ul class="collection">
+          <li class="collection-item avatar">
+            <i class="mdi-social-plus-one circle blue"></i>
+            <span class="title">OAuth</span>
+            <p>OAuth</p>
+          </li>
+          <li class="collection-item avatar">
+            <i class="mdi-navigation-check circle green"></i>
+            <span class="title">Authorized Applications</span>
+            <p>Authorized Applications</p>
+          </li>
+        </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function() {
+    $('.top-nav').pushpin({ top: $('nav').height() });
+  });
+</script>
+

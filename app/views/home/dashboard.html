@@ -1,0 +1,389 @@
+<div class="container nxMainContainer">
+  <div class="fixed-help">
+    <a class="waves-effect waves-light btn modal-trigger" href="#modalHelp">
+      What's this ?
+    </a>
+  </div>
+  <!-- Modal Structure -->
+  <div id="modalHelp" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Nuxeo UX Lab</h4>
+      <p>This prototype shows a simplified and easy to use browsing view, to let you imagine how work and collaborate readily.
+      Browse and <strong>give us your feedback</strong> about this new navigation by <a target="_blank" href="https://docs.google.com/forms/d/1XfiGSivcaKTEoIvq8-SoRs_WhlznsdS7zBJpodKUvdE/viewform?usp=send_form">filling this 4 minutes survey</a> to help us continue to improve our product & your experience.</p> <strong>Note that lots of features are not implemented yet: you won't be able to create a document or to resolve a task for real</strong>.
+      <h5>Simplified document view</h5>
+      <p>The tree is folded by default, tabs are on the left side, we display less element to not disturb your attention.</p>
+      <h5>Access the tree from everywhere</h5>
+      <p>From a document, from the dashboard, when browsing tables. In the case you need it, it's in the corner.</p>
+      <h5>Create your file when you want</h5>
+      <p>After a search or in the dashboard, if you think about a document to create, create it directly from where you are. Note that the actual document creation is disabled in this stateless demo</p>
+      <h5>Sticky toolbar for documents</h5>
+      <p>The sticky toolbar keeps document actions handy: no need for scroll to top anymore.</p>
+      <h5>Side panel for shortcuts</h5>
+      <p>Open the right panel to see your tasks, your favorites, your collections and more. No need to have another step to access your documents.</p>
+      <h5>Edit your document from their location</h5>
+      <p>On a table listing, hover the row to directly interact with your document.</p>
+      <h5>Personal Workspace in Home</h5>
+      <p>The personal workspace was hard to locate. Now it's simply in your home tab.</p>
+      <h5>Personal Settings under the user menu</h5>
+      <p>Your personal settings have moved from the Home tab to the user menu below your name.</p>
+      <h5>You enjoyed it? Share us your thoughts!</h5>
+      <p>To better understand user's interactions and behaviours with Nuxeo Platform, and influence the development of our products and services, <a target="_blank" href="https://docs.google.com/forms/d/1XfiGSivcaKTEoIvq8-SoRs_WhlznsdS7zBJpodKUvdE/viewform?usp=send_form">take 4 minutes to fill our survey</a>. You are the best feedback we can hear. Thanks a lot & nice browsing!</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#" class="modal-action modal-close waves-effect waves-green btn-flat primary">Nice, let me try!</a>
+    </div>
+  </div>
+
+  <div class="fixed-action-btn file-creation">
+    <a class="btn-floating btn-large blue1 tooltipped modal-trigger" href="#modalCD" data-position="left" data-tooltip="Create Document">
+      <i class="large mdi-editor-mode-edit"></i>
+    </a>
+    <ul>
+      <li>
+        <a class="btn-floating blue tooltipped modal-trigger" href="#modalCD" data-position="left" data-tooltip="Import Document">
+          <i class="mdi-file-cloud-upload"></i>
+        </a>
+      </li>
+      <li>
+        <a class="btn-floating blue2 tooltipped modal-trigger" href="#modalCD" data-position="left" data-tooltip="Create Note">
+          <i class="large mdi-action-receipt"></i>
+        </a>
+      </li>
+      <li>
+        <a class="btn-floating blue3 tooltipped modal-trigger" href="#modalCD" data-position="left" data-tooltip="Create Image">
+          <i class="large mdi-image-crop-original"></i>
+        </a>
+      </li>
+      <li>
+        <a class="btn-floating blue4 tooltipped modal-trigger" href="#modalCD" data-position="left" data-tooltip="Create File">
+          <i class="large mdi-action-description"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!-- Modal Structure -->
+  <div id="modalCD" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>New document</h4>
+      <form class="doc-creation col s12">
+        <div class="row">
+          <div class="nx-input col s12">
+            <label for="textarea1">Title</label>
+            <input placeholder="My document" id="" type="text" class="validate">
+          </div>
+        </div>
+        <div class="row">
+          <div class="nx-input col s12">
+            <label>In </label>
+            <select class="browser-default">
+              <option selected="" disabled="" value="">Wokspace 1</option>
+              <option value="1">workspace 1</option>
+              <option value="2">workspace 2</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="file-field nx-input col s12">
+            <label for="textarea1">Content</label>
+            <input class="file-path validate" type="text"/>
+            <div class="btn">
+              <span>Upload</span>
+              <input type="file" />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="nx-input col s12">
+            <label for="first_name" class="active">Tags</label>
+            <input placeholder="Latest tags used" id="" type="text" class="validate">
+          </div>
+        </div>
+        <div class="row">
+          <div class="nx-input col s12">
+            <label for="first_name" class="active">Nature</label>
+            <select class="browser-default">
+              <option selected="" disabled="" value="">Choose your option</option>
+              <option value="1">Invoice</option>
+              <option value="2">Letter</option>
+              <option value="3">Report</option>
+              <option value="3">…</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="nx-input col s12">
+            <label>Add also to Collection</label>
+            <select class="browser-default">
+              <option selected="" disabled="" value="">Choose your option</option>
+              <option value="1">Collection 1</option>
+              <option value="2">Collection 2</option>
+              <option value="3">Collection 3</option>
+            </select>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <a href="#" class="modal-action modal-close waves-effect waves-green btn-flat primary">Create</a>
+      <a href="#" class="modal-action modal-close waves-effect waves-green btn-flat ">Cancel</a>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <div class="col s12 m12 l6">
+      <div class="card-panel">
+        <h5>My Documents</h5>
+        <table class="striped responsive-table">
+          <thead>
+            <tr>
+              <th><input type="checkbox" /></th>
+              <th>Name</th>
+              <th>Updated</th>
+              <th>By</th>
+              <th>Version</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td><a ng-href="#/image"><i class="mdi-image-crop-original"></i>Image</a></td>
+              <td>Jun 20, 2014</td>
+              <td><a ui-sref="settings.profile">Lise Kemen</a></td>
+              <td>3.3</td>
+              <td class="actions">
+                <div>
+                  <a href=""><i class="mdi-editor-mode-edit"></i>edit</a>
+                  <a href=""><i class="mdi-file-file-download"></i>download</a>
+                  <a href=""><i class="mdi-action-delete"></i>delete</a>
+                <div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td><a ng-href="#/note"><i class="mdi-action-receipt"></i>Note</a></td>
+              <td>Jun 20, 2014</td>
+              <td><a ui-sref="settings.profile">Lise Kemen</a></td>
+              <td>3.3</td>
+              <td class="actions">
+                <div>
+                  <a href=""><i class="mdi-editor-mode-edit"></i>edit</a>
+                  <a href=""><i class="mdi-file-file-download"></i>download</a>
+                  <a href=""><i class="mdi-action-delete"></i>delete</a>
+                <div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td><a ng-href="#/case"><i class="mdi-action-assignment"></i>Case</a></td>
+              <td>Jun 20, 2014</td>
+              <td><a ui-sref="settings.profile">Lise Kemen</a></td>
+              <td>3.3</td>
+              <td class="actions">
+                <div>
+                  <a href=""><i class="mdi-editor-mode-edit"></i>edit</a>
+                  <a href=""><i class="mdi-file-file-download"></i>download</a>
+                  <a href=""><i class="mdi-action-delete"></i>delete</a>
+                <div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td><a ng-href="#/file"><i class="mdi-action-description"></i>File</a></td>
+              <td>Jun 20, 2014</td>
+              <td><a ui-sref="settings.profile">Lise Kemen</a></td>
+              <td>3.3</td>
+              <td class="actions">
+                <div>
+                  <a href=""><i class="mdi-editor-mode-edit"></i>edit</a>
+                  <a href=""><i class="mdi-file-file-download"></i>download</a>
+                  <a href=""><i class="mdi-action-delete"></i>delete</a>
+                <div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="col s12 m12 l6">
+      <div class="card-panel">
+        <h5>My Tasks</h5>
+        <ul class="tasks collection">
+          <li class="collection-item">
+            <div class="task-title">
+              <i class="mdi-content-content-paste circle blue"></i>
+              <span class="title bold">Document Review</span>
+            </div>
+            <div>
+              <i class="mdi-social-person"></i>
+              <span class="title">Requested by Alain Escaffre</span>
+            </div>
+            <div>
+              <i class="mdi-action-event"></i>
+              <span class="title">Due date: Sept 12, 2015</span>
+            </div>
+          </li>
+          <li class="collection-item">
+            <div class="task-title">
+              <i class="mdi-navigation-check circle green"></i>
+              <span class="title bold">Approval</span>
+            </div>
+            <div>
+              <i class="mdi-social-person"></i>
+              <span class="title">Requested by Solen Guitter</span>
+            </div>
+            <div>
+              <i class="mdi-action-event"></i>
+              <span class="title">Due date: Sept 12, 2015</span>
+            </div>
+          </li>
+          <li class="collection-item">
+            <div class="task-title">
+              <i class="mdi-navigation-arrow-forward circle blue"></i>
+              <span class="title bold">Assignment</span>
+            </div>
+            <div>
+              <i class="mdi-social-person"></i>
+              <span class="title">Requested by Thierry Delprat</span>
+            </div>
+            <div>
+              <i class="mdi-action-event"></i>
+              <span class="title">Due date: Sept 12, 2015</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col s12 m12 l6">
+      <div class="card-panel">
+        <h5>Last edits from me</h5>
+         <table class="striped responsive-table">
+          <thead>
+            <tr>
+              <th><input type="checkbox" /></th>
+              <th>Name</th>
+              <th>Updated</th>
+              <th>By</th>
+              <th>Version</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td><a ng-href="#/image"><i class="mdi-image-crop-original"></i>Image</a></td>
+              <td>Jun 20, 2014</td>
+              <td><a ui-sref="settings.profile">Lise Kemen</a></td>
+              <td>3.3</td>
+              <td class="actions">
+                <div>
+                  <a href=""><i class="mdi-editor-mode-edit"></i>edit</a>
+                  <a href=""><i class="mdi-file-file-download"></i>download</a>
+                  <a href=""><i class="mdi-action-delete"></i>delete</a>
+                <div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td><a ng-href="#/note"><i class="mdi-action-receipt"></i>Note</a></td>
+              <td>Jun 20, 2014</td>
+              <td><a ui-sref="settings.profile">Lise Kemen</a></td>
+              <td>3.3</td>
+              <td class="actions">
+                <div>
+                  <a href=""><i class="mdi-editor-mode-edit"></i>edit</a>
+                  <a href=""><i class="mdi-file-file-download"></i>download</a>
+                  <a href=""><i class="mdi-action-delete"></i>delete</a>
+                <div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td><a ng-href="#/case"><i class="mdi-action-assignment"></i>Case</a></td>
+              <td>Jun 20, 2014</td>
+              <td><a ui-sref="settings.profile">Lise Kemen</a></td>
+              <td>3.3</td>
+              <td class="actions">
+                <div>
+                  <a href=""><i class="mdi-editor-mode-edit"></i>edit</a>
+                  <a href=""><i class="mdi-file-file-download"></i>download</a>
+                  <a href=""><i class="mdi-action-delete"></i>delete</a>
+                <div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="col s12 m12 l6">
+      <div class="card-panel">
+        <h5>Favorites</h5>
+         <table class="striped responsive-table">
+          <thead>
+            <tr>
+              <th><input type="checkbox" /></th>
+              <th>Name</th>
+              <th>Updated</th>
+              <th>By</th>
+              <th>Version</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td><a ng-href="#/image"><i class="mdi-image-crop-original"></i>Image</a></td>
+              <td>Jun 20, 2014</td>
+              <td><a ui-sref="settings.profile">Lise Kemen</a></td>
+              <td>3.3</td>
+              <td class="actions">
+                <div>
+                  <a href=""><i class="mdi-editor-mode-edit"></i>edit</a>
+                  <a href=""><i class="mdi-file-file-download"></i>download</a>
+                  <a href=""><i class="mdi-action-delete"></i>delete</a>
+                <div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td><a ng-href="#/note"><i class="mdi-action-receipt"></i>Note</a></td>
+              <td>Jun 20, 2014</td>
+              <td><a ui-sref="settings.profile">Lise Kemen</a></td>
+              <td>3.3</td>
+              <td class="actions">
+                <div>
+                  <a href=""><i class="mdi-editor-mode-edit"></i>edit</a>
+                  <a href=""><i class="mdi-file-file-download"></i>download</a>
+                  <a href=""><i class="mdi-action-delete"></i>delete</a>
+                <div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td><a ng-href="#/case"><i class="mdi-action-assignment"></i>Case</a></td>
+              <td>Jun 20, 2014</td>
+              <td><a ui-sref="settings.profile">Lise Kemen</a></td>
+              <td>3.3</td>
+              <td class="actions">
+                <div>
+                  <a href=""><i class="mdi-editor-mode-edit"></i>edit</a>
+                  <a href=""><i class="mdi-file-file-download"></i>download</a>
+                  <a href=""><i class="mdi-action-delete"></i>delete</a>
+                <div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  $(document).ready(function() {
+    $('.tooltipped').tooltip({delay: 5});
+    $('.modal-trigger').leanModal();
+  });
+</script>

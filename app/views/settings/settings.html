@@ -1,0 +1,26 @@
+<ul class="side-nav side-main fixed" id="nav-mobile">
+  <li class="bold">
+    <a class="waves-effect waves-blue tooltipped logo-home" data-position="right" data-tooltip="Home" ui-sref="home.dashboard"></a>
+  </li>
+  <li class="bold"><a class="waves-effect waves-blue tooltipped" data-position="right" data-tooltip="Profile" ui-sref="settings.profile" ui-sref-active="active">
+    <i class="mdi-social-person" title="Profile"></i></a>
+  </li>
+  <li class="bold"><a class="waves-effect waves-blue tooltipped" data-position="right" data-tooltip="Notifications" ui-sref="settings.notifications" ui-sref-active="active">
+    <i class="mdi-social-notifications" title="Notifications"></i></a>
+  </li>
+  <li class="bold"><a class="waves-effect waves-blue tooltipped" data-position="right" data-tooltip="Nuxeo Drive" ui-sref="settings.drive" ui-sref-active="active">
+    <i class="mdi-notification-sync" title="Nuxeo Drive"></i></a>
+  </li>
+  <li class="bold"><a class="waves-effect waves-blue tooltipped" data-position="right" data-tooltip="Cloud Services" ui-sref="settings.cloudservices" ui-sref-active="active">
+    <i class="mdi-communication-vpn-key" title="Cloud Services"></i></a>
+  </li>
+  </li>
+</ul>
+
+<div ui-view></div>
+
+<script>
+  $(document).ready(function() {
+    $('.tooltipped').tooltip({delay: 5});
+  });
+</script>

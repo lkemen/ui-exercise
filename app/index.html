@@ -1,0 +1,262 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/materialize/bin/materialize.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="nuxeoApp">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <header>
+      <ul id="dropdown1" class="dropdown-content">
+        <!--li><a href="#/tasks">Tasks<span class="badge rounded task">3</span></a></li-->
+        <!--li><a href="#/notifications">Notifications<span class="badge rounded notif">2</span></a></li-->
+        <li><a ui-sref="settings.profile">Profile</a></li>
+        <li><a ui-sref="settings.notifications">Notifications</a></li>
+        <li><a ui-sref="settings.drive">Drive</a></li>
+        <li><a ui-sref="settings.cloudservices">Cloud Services</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">Sign out</a></li>
+      </ul>
+      <nav>
+        <div class="container">
+          <div class="nav-wrapper">
+            <div class="logo-box left">
+              <a class="logo" href="#/" id="logo-container">
+                <img src="images/nuxeo.png" />
+              </a>
+            </div>
+            <ul class="left hide-on-med-and-down">
+              <li><a ui-sref="home.dashboard" ui-sref-active="active">Home</a></li>
+              <li><a ui-sref="browse" ui-sref-active="active" ui-sref-opts="{ inherit: false }">Browse</a></li>
+              <li><a ui-sref="search" ui-sref-active="active">Search</a></li>
+              <li><a ui-sref="admin.drive" ui-sref-active="active">Admin</a></li>
+            </ul>
+            <ul class="right hide-on-med-and-down">
+              <li class="search">
+                <form>
+                  <div class="input-field">
+                    <input id="search" type="search" required>
+                    <i class="mdi-navigation-close"></i>
+                    <label for="search"><i class="mdi-action-search"></i></label>
+                  </div>
+                </form>
+              </li>
+              <li class="profile">
+                <a class="dropdown-button" href="#!" data-activates="dropdown1">
+                  <img src="images/avatar.png" />
+                  <span class="profile-name">Lise Kemen</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <ul id="slide-out" class="side-nav shortcuts">
+      <div class="shortcut-ctn">
+        <div class="card-panel">
+          <h5>Clipboard</h5>
+          <span class="empty">
+            Your clipboard is empty.
+          </span>
+        </div>
+        <div class="card-panel">
+          <h5>Tasks<span class="badge rounded task">3</span></h5>
+          <span>
+            <ul class="tasks collection">
+              <li class="collection-item">
+                <div class="task-title">
+                  <i class="mdi-content-content-paste circle blue"></i>
+                  <span class="title bold">Document Review</span>
+                </div>
+                <div>
+                  <i class="mdi-social-person"></i>
+                  <span class="title">Requested by Alain Escaffre</span>
+                </div>
+                <div>
+                  <i class="mdi-action-event"></i>
+                  <span class="title">Due date: Sept 12, 2015</span>
+                </div>
+              </li>
+              <li class="collection-item">
+                <div class="task-title">
+                  <i class="mdi-navigation-check circle green"></i>
+                  <span class="title bold">Approval</span>
+                </div>
+                <div>
+                  <i class="mdi-social-person"></i>
+                  <span class="title">Requested by Solen Guitter</span>
+                </div>
+                <div>
+                  <i class="mdi-action-event"></i>
+                  <span class="title">Due date: Sept 12, 2015</span>
+                </div>
+              </li>
+              <li class="collection-item">
+                <div class="task-title">
+                  <i class="mdi-navigation-arrow-forward circle blue"></i>
+                  <span class="title bold">Assignment</span>
+                </div>
+                <div>
+                  <i class="mdi-social-person"></i>
+                  <span class="title">Requested by Thierry Delprat</span>
+                </div>
+                <div>
+                  <i class="mdi-action-event"></i>
+                  <span class="title">Due date: Sept 12, 2015</span>
+                </div>
+              </li>
+            </ul>
+          </span>
+        </div>
+        <div class="card-panel">
+          <h5>Collections</h5>
+          <div class="item">
+            <a class="collection-title" ui-sref="home.collections">
+              <i class="mdi-action-book" title="Collections"></i>
+              My Pictures Selection
+            </a>
+            <div class="drop-zone">
+              <a ng-href="#/image"><img src="images/firefox.jpg" /></a>
+              <a ng-href="#/image"><img src="images/flamingo.jpg" /></a>
+              <a ng-href="#/image"><img src="images/parasol.jpg" /></a>
+              <a ng-href="#/image"><img src="images/landscape.jpg" /></a>
+              <a ng-href="#/image"><img src="images/firefox.jpg" /></a>
+            </div>
+          </div>
+          <div class="item">
+            <a class="collection-title" ui-sref="home.collections">
+              <i class="mdi-action-book" title="Collections"></i>
+              Nuxeo DAM
+            </a>
+            <div class="drop-zone">
+              <a ng-href="#/image"><img src="images/parasol.jpg" /></a>
+              <a ng-href="#/image"><img src="images/firefox.jpg" /></a>
+              <a ng-href="#/image"><img src="images/flamingo.jpg" /></a>
+              <a ng-href="#/image"><img src="images/landscape.jpg" /></a>
+              <a ng-href="#/image"><img src="images/parasol.jpg" /></a>
+            </div>
+          </div>
+          <div class="item">
+            <a class="collection-title" ui-sref="home.collections">
+              <i class="mdi-action-book" title="Collections"></i>
+              Nuxeo 2015
+            </a>
+            <div class="drop-zone">
+              <a ng-href="#/image"><img src="images/landscape.jpg" /></a>
+              <a ng-href="#/image"><img src="images/flamingo.jpg" /></a>
+              <a ng-href="#/image"><img src="images/firefox.jpg" /></a>
+              <a ng-href="#/image"><img src="images/parasol.jpg" /></a>
+              <a ng-href="#/image"><img src="images/flamingo.jpg" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="card-panel">
+          <h5>Recently viewed</h5>
+          <span class="links-list">
+            <a ui-sref="home.favorites"><i class="mdi-image-crop-original"></i></i>Image</a>
+            <a ui-sref="home.favorites"><i class="mdi-action-receipt"></i></i>Note</a>
+            <a ui-sref="home.favorites"><i class="mdi-action-assignment"></i></i>Case</a>
+          </span>
+        </div>
+        <div class="card-panel">
+          <h5>Favorites</h5>
+          <span class="links-list">
+            <a ui-sref="home.favorites"><i class="mdi-image-crop-original"></i></i>Image</a>
+            <a ui-sref="home.favorites"><i class="mdi-action-receipt"></i></i>Note</a>
+            <a ui-sref="home.favorites"><i class="mdi-action-assignment"></i></i>Case</a>
+          </span>
+        </div>
+      </div>
+    </ul>
+    <a href="#" data-activates="slide-out" class="button-collapse shortcut-btn show-on-large right">
+      <span class="badge rounded task">3</span>
+      <!--<span class="badge rounded notif">2</span-->
+      <i class="mdi-navigation-menu"></i>
+    </a>
+
+    <main class="nxcontainer">
+      <div ui-view></div>
+      <div class="push-footer"></div>
+    </main>
+
+    <footer>
+      <p>Cooked with <i class="mdi-action-favorite-outline"></i> in the Nuxeo <span>UX Lab</span>.</p>
+    </footer>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script type="text/javascript">
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.0.1";
+      analytics.load("4qquvje3fv");
+      analytics.page()
+      }}();
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/materialize/bin/materialize.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/nuxeo/lib/jquery/nuxeo.js"></script>
+    <script src="bower_components/angular-nuxeo/nuxeo.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/home.js"></script>
+        <script src="scripts/controllers/dashboard.js"></script>
+        <script src="scripts/controllers/browse.js"></script>
+        <script src="scripts/controllers/search.js"></script>
+        <script src="scripts/controllers/file.js"></script>
+        <script src="scripts/controllers/image.js"></script>
+        <script src="scripts/controllers/note.js"></script>
+        <script src="scripts/controllers/profile.js"></script>
+        <script src="scripts/controllers/tasks.js"></script>
+        <script src="scripts/controllers/admin.js"></script>
+        <script src="scripts/controllers/activity.js"></script>
+        <script src="scripts/controllers/create.js"></script>
+        <script src="scripts/controllers/personalworkspace.js"></script>
+        <script src="scripts/controllers/settings.js"></script>
+        <script src="scripts/controllers/notifications.js"></script>
+        <script src="scripts/controllers/collections.js"></script>
+        <script src="scripts/controllers/favorites.js"></script>
+        <script src="scripts/controllers/searches.js"></script>
+        <script src="scripts/controllers/case.js"></script>
+        <script src="scripts/controllers/invoice.js"></script>
+        <!-- endbuild -->
+
+    <script>
+      $(document).ready(function() {
+        $(".dropdown-button").dropdown();
+        // Initialize collapse button
+        $(".button-collapse").sideNav({
+          menuWidth: 300, // Default is 240
+          edge: 'right', // Choose the horizontal origin
+        });
+      });
+    </script>
+
+</body>
+</html>

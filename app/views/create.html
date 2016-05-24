@@ -1,0 +1,102 @@
+<div class="no-tabs">
+
+  <section class="top-nav">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a class="page-title">New document in Workspace</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container nxMainContainer">
+    <div class="row">
+      <div class="col s12 m12 l12">
+        <div class="card-panel creation">
+          <div class="row">
+            <form class="doc-creation col s12">
+              <div class="row">
+                <div class="nx-input col s12">
+                  <label>Incident kind</label>
+                  <select class="browser-default">
+                    <option selected="" disabled="" value="">Choose your option</option>
+                    <option value="1">Accident</option>
+                    <option value="2">Breakdown</option>
+                    <option value="3">Building fire</option>
+                    <option value="3">Other</option>
+                    <option value="3">Robbery</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="nx-input col s12">
+                  <label for="textarea1">Incident date</label>
+                  <input type="date" class="datepicker"/>
+                </div>
+              </div>
+              <div class="row">
+                <div class="nx-input col s12">
+                  <label for="first_name" class="active">Incident address</label>
+                  <input placeholder="My document" id="first_name" type="text" class="validate">
+                </div>
+              </div>
+              <div class="row">
+                <div class="nx-input col s12">
+                  <label for="first_name" class="active">Incident city</label>
+                  <input placeholder="My document" id="first_name" type="text" class="validate">
+                </div>
+              </div>
+              <div class="row">
+                <div class="nx-input col s12">
+                  <label>Incident state</label>
+                  <select class="browser-default">
+                    <option selected="" disabled="" value="">Choose your option</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="nx-input col s12">
+                  <label for="textarea1">Incident Description</label>
+                  <textarea id="textarea1" placeholder="Document description"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="nx-input col s12">
+                  <label for="textarea1">Due date</label>
+                  <input type="date" class="datepicker"/>
+                </div>
+              </div>
+              <div class="row">
+                <div class="file-field nx-input col s12">
+                  <label for="textarea1">Content</label>
+                  <input class="file-path validate" type="text"/>
+                  <div class="btn">
+                    <span>Upload</span>
+                    <input type="file" />
+                  </div>
+                </div>
+              </div>
+              <div class="row btns-bar">
+                <a class="waves-effect waves-light btn primary">Create</a>
+                <a class="btn cancel">Cancel</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function() {
+    $('.top-nav').pushpin({ top: $('nav').height() });
+    $('.datepicker').pickadate({
+      selectMonths: true,
+      selectYears: 15
+    });
+  });
+</script>

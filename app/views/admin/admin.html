@@ -1,0 +1,60 @@
+<ul class="side-nav side-main fixed" id="nav-mobile">
+  <li class="bold">
+    <a class="waves-effect waves-blue tooltipped logo-home" data-position="right" data-tooltip="Home" ui-sref="home.dashboard"></a>
+  </li>
+  <li class="bold"><a class="waves-effect waves-blue tooltipped" data-position="right" data-tooltip="Nuxeo Online Services" ui-sref="admin.nos" ui-sref-active="active">
+    <i class="mdi-image-wb-cloudy" title="Nuxeo Online Services"></i></a>
+  </li>
+  <li class="bold"><a class="waves-effect waves-blue tooltipped" data-position="right" data-tooltip="Update Center" ui-sref="admin.update">
+    <i class="mdi-action-system-update-tv" title="Update Center"></i></a>
+  </li>
+  <li class="bold"><a class="waves-effect waves-blue tooltipped" data-position="right" data-tooltip="Nuxeo Drive" ui-sref="admin.drive">
+    <i class="mdi-notification-sync" title="Nuxeo Drive"></i></a>
+  </li>
+  <li class="bold"><a class="waves-effect waves-blue tooltipped" data-position="right" data-tooltip="Notifications" ui-sref="admin.notifications">
+    <i class="mdi-social-notifications" title="Notifications"></i></a>
+  </li>
+  <li class="bold"><a class="waves-effect waves-blue tooltipped" data-position="right" data-tooltip="Authorized apps" ui-sref="admin.authapps">
+    <i class="mdi-notification-play-install" title="Authorized apps"></i></a>
+  </li>
+  <li class="bold"><a class="waves-effect waves-blue tooltipped" data-position="right" data-tooltip="oAuth tokens" ui-sref="admin.oauthtokens">
+    <i class="mdi-communication-vpn-key" title="oAuth tokens"></i></a>
+  </li>
+  </li>
+</ul>
+
+<div class="tree-sidebar">
+  <form class="col s12 select">
+    <div class="row default-repository">
+      <select class="browser-default">
+        <option value="0" selected>Default Domain</option>
+        <option value="1">Other domain</option>
+        <option value="1">----------------</option>
+        <option value="0" selected>Default Repository</option>
+        <option value="1">Other repository</option>
+      </select>
+    </div>
+  </form>
+  <ul>
+    <li><a href=""><i class="mdi-file-folder"></i>Sections</a></li>
+    <li><a href=""><i class="mdi-file-folder"></i>Templates</a></li>
+    <li><a href=""><i class="mdi-file-folder"></i>Workspaces</a>
+      <ul>
+        <li><a href=""><i class="mdi-file-folder"></i>Workspace 1</a></li>
+        <li><a href=""><i class="mdi-file-folder"></i>Workspace 2</a></li>
+        <li><a href=""><i class="mdi-file-folder"></i>Workspace 3</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<div ui-view></div>
+
+<script>
+  $(document).ready(function() {
+    $('.tooltipped').tooltip({delay: 5});
+    $('.tree-show').click(function(){
+      document.body.classList.toggle('showing-tree-sidebar');
+    })
+  });
+</script>
