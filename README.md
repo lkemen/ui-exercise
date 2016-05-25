@@ -23,7 +23,7 @@ node --version
 
 ... and same command for npm, Git, Bower & Grunt.
 
-If you have them all, perfect! You can jump to the **Build & Run the project** section.
+If you have them all, perfect! You can jump to the **[Build & Run the project](#build--run-the-project)** section.
 If not, let's install all this!
 
 #### Install Node + npm and Git
