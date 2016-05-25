@@ -1,9 +1,9 @@
 # ![nuxeo](app/images/nuxeo_logo.png) UI Exercise
 The goal of this exercise is to see if you are able to run a demo from a readme file and work on it without any trouble.
 
-* Install Tools & dependencies,
+* Install Tools & Dependencies,
 * Build & Run the project,
-* Then do the exercise we sent you and sent your results back.
+* Then do the exercise we sent you and send your results back.
 
 Let's start!
 
@@ -15,19 +15,19 @@ This demo requires packages you might not have in your computer:
 * [Bower](http://bower.io/) to build the demo.
 * [Grunt](http://gruntjs.com/) to run the demo
 
-To check if you have them, type for each tool the following command in your terminal:
+To check if you have them, for each tool, type the following command in your terminal:
 
 ```sh
 node --version
 ```
 
-... and same command for npm, Git, Bower & Grunt.
+... and the same command for npm, Git, Bower & Grunt.
 
 If you have them all, perfect! You can jump to the **[Build & Run the project](#build--run-the-project)** section.
-If not, let's install all this!
+If not, let's install everything!
 
 #### Install Node + npm and Git
-An easy way to install all this if you are on OSX is to install [Homebrew](http://brew.sh/) first.
+An easy way to install eveything if you are on OSX is to install [Homebrew](http://brew.sh/) first.
 
 [Follow the instruction](https://changelog.com/install-node-js-with-homebrew-on-os-x/) to install Node + npm.
 
@@ -48,7 +48,7 @@ npm install -g grunt-cli
 ```
 
 ## Build & Run the project
-Now you have all the packages installed it's time to clone the project, build it and run it.
+Now that you have all the packages installed it's time to clone the project, build it and run it.
 
 In your terminal
 
@@ -62,7 +62,7 @@ Go to the ui-exercise repository
 cd ui-exercise/
 ```
 
-Then in the ui-exercise the following command to build it
+Then in the ui-exercise use the following command to build it
 
 ```sh
 bower install
@@ -74,8 +74,8 @@ And run the project
 grunt serve
 ```
 
-You have now the demo up and running in your browser, congratulations!
-You can do now the exercise, good luck and see you soon :)
+You now have the demo up and running in your browser, congratulations!
+You can now do the exercise, good luck and see you soon :)
 
 
 ## About this project
