@@ -1,28 +1,82 @@
-# UI Exercise
+# ![nuxeo](app/images/nuxeo_logo.png) UI Exercise
 The goal of this exercise is to see if you are able to run a demo from a readme file and work on it without any trouble.
 
-## 2 Steps
-* install the tools, dependencies
-* run the project
+* Install Tools & dependencies,
+* Build & Run the project,
+* Then do the exercise we sent you and sent your results back.
 
-Then do the exercise we sent you and sent your results back to us.
+Let's start!
 
-## 1 - Install Tools & Dependencies
-[Homebrew](http://brew.sh/)
-[Bower](http://bower.io/) requires node, npm and git.
-[Grunt](http://gruntjs.com/)
+## Install Tools & Dependencies
 
-#### Bower & Dependencies
+This demo requires packages you might not have in your computer: 
+
+* [Node](https://docs.npmjs.com/getting-started/installing-node) + [npm]() + [Git]() to install the packages for the demo
+* [Bower](http://bower.io/) to build the demo.
+* [Grunt](http://gruntjs.com/) to run the demo
+
+To check if you have them, type for each tool the following command in your terminal:
 
 ```sh
-npm install -g bower && bower install
+node --version
 ```
 
-## 2 - Run the project
+... and same command for npm, Git, Bower & Grunt.
+
+If you have them all, perfect! You can jump to the **Build & Run the project** section.
+If not, let's install all this!
+
+#### Install Node + npm and Git
+An easy way to install all this if you are on OSX is to install [Homebrew](http://brew.sh/) first.
+
+[Follow the instruction](https://changelog.com/install-node-js-with-homebrew-on-os-x/) to install Node + npm.
+
+Then for Git:
+
+```sh
+ brew install git
+```
+
+#### Install Bower
+```sh
+npm install -g bower
+```
+
+#### Install Grunt
+```sh
+npm install -g grunt-cli
+```
+
+## Build & Run the project
+Now you have all the packages installed it's time to clone the project, build it and run it.
+
+In your terminal
+
+```sh
+git clone git@github.com:lkemen/ui-exercise.git
+```
+
+Go to the ui-exercise repository
+
+```sh
+cd ui-exercise/
+```
+
+Then in the ui-exercise the following command to build it
+
+```sh
+bower install
+```
+
+And run the project
 
 ```sh
 grunt serve
 ```
+
+You have now the demo up and running in your browser, congratulations!
+You can do now the exercise, good luck and see you soon :)
+
 
 ## About this project
 
