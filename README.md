@@ -65,7 +65,7 @@ cd ui-exercise/
 Then in the ui-exercise use the following command to build it
 
 ```sh
-bower install
+npm install && bower install
 ```
 
 And run the project
