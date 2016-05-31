@@ -11,8 +11,8 @@ Let's start!
 
 This demo requires packages you might not have in your computer: 
 
-* [Node](https://docs.npmjs.com/getting-started/installing-node) + [npm]() + [Git]() to install the packages for the demo
-* [Ruby]()
+* [Node](https://docs.npmjs.com/getting-started/installing-node) + [npm](https://www.npmjs.com/) + [Git](https://git-scm.com/) to install the packages for the demo
+* [Ruby](https://www.ruby-lang.org/en/) + [Compass](http://compass-style.org/install/)
 * [Bower](http://bower.io/) to build the demo.
 * [Grunt](http://gruntjs.com/) to run the demo
 
@@ -22,12 +22,12 @@ To check if you have them, for each tool, type the following command in your ter
 node --version
 ```
 
-... and the same command for npm, Ruby, Git, Bower & Grunt.
+... and the same command for npm, Git, Ruby, Compass, Bower & Grunt.
 
 If you have them all, perfect! You can jump to the **[Build & Run the project](#build--run-the-project)** section.
 If not, let's install everything!
 
-#### Install Node + npm, Git and Ruby
+#### Install Node + npm, Git, Ruby and Compass
 An easy way to install eveything if you are on OSX is to install [Homebrew](http://brew.sh/) first.
 
 [Follow the instruction](https://changelog.com/install-node-js-with-homebrew-on-os-x/) to install Node + npm.
@@ -38,14 +38,10 @@ Then for Git:
  brew install git
 ```
 
-And for Ruby:
+Then for Ruby and Compass:
 
 ```sh
-apt-get install ruby
-```
-
-```sh
-apt-get install ruby-compass
+brew install ruby
 ```
 
 ```sh
