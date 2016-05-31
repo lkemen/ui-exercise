@@ -28,7 +28,7 @@ If you have them all, perfect! You can jump to the **[Build & Run the project](#
 If not, let's install everything!
 
 #### Install Node + npm, Git, Ruby and Compass
-An easy way to install eveything if you are on OSX is to install [Homebrew](http://brew.sh/) first.
+An easy way to install everything if you are on OSX is to install [Homebrew](http://brew.sh/) first.
 
 [Follow the instruction](https://changelog.com/install-node-js-with-homebrew-on-os-x/) to install Node + npm.
 
